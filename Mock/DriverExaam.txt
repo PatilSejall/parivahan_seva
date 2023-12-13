@@ -1,0 +1,44 @@
+import java.util.*;
+import java.lang.*;
+
+class DriverExaam
+{
+	void Exam()
+	{
+		char[] anskey={'C','A','B','A','D','C','B'}
+		char[] studenans=new char[anskey.length];
+		
+		Scanner sc=new Scanner(System.in);
+		
+		char studans;
+		for(int i=0;i<anskey.length();i++)
+		{
+			System.out.println("What is the answer of Question no ("+(i+1)+")");
+			studans[i]=sc.next().charAt(0);	
+		}
+
+		int right=0,wrong=0;
+		for(i=0;i<anskey.length();i++)
+		{
+			if(anskey[i]==studans[i])
+			{
+				count++;
+			}
+			
+			else
+			{
+				wrong++;
+			}
+		}
+
+		System.out.println("The correct answers are "+right" and incorrect answers are "+wrong);
+		if(right>5)
+		{
+			System.out.println("You have passed exam successfully");
+		}
+		else
+		{
+			System.out.println("Failed!!Your score is less than 75%. Better luck next time!!");
+		}
+	}
+}

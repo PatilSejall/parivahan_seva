@@ -1,0 +1,57 @@
+package RenewalPackage;
+
+import java.util.*;
+import java.lang.*;
+
+class RenewalClass extends Exception
+{
+
+	RenewalClass(String message)
+	{
+		super(message);
+	}
+
+
+	void method1()
+	{
+		System.out.println("Following are the stages for application submission in Service on driving liscence in the following order");
+		System.out.println("1] Fill Applicant/Request datails\n2] Upload documents(if required)\n3] Upload Phot and signature if required(applicable only in certain states)\n4] Driving Liscence Test slot Booking\n5] Payment of fees\n6]Verify Pay status\n7] Print the Receipt");
+
+		System.out.println("\n\nTo agree and continue please enter(y/n)");
+		Scanner sc= new Scanner(System.in);
+		char ch=sc.next.charAt(0);
+		char y,n;
+
+		if(ch==n)
+		{
+			return;	
+		}
+		else
+		{
+			RenewalClass e1= new RenewalClass("Invalid Driving Liscence details");
+			System.out.println("Enter you Driving liscence details");
+			try
+			{
+				System.out.println("Enter your Driving liscence number");
+				String num=sc.next();
+				if(num.length>15)
+				{
+					throw e1;
+				}
+				
+				else
+				{
+					System.out.println("You are eligible for Renewal of the liscnce!!!");
+					System.out.println("Contact your nearest RTO for futher information");
+					
+				}		
+				
+			}
+			
+			catch(RenewalClass e)
+			{
+				System.out.println(getMessage)
+			}
+		}
+	}
+}

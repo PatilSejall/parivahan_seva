@@ -1,0 +1,7 @@
+import RenewalPAckage.*;
+
+public class RenewPrac
+{
+	RenewalClass rn= new RenewalClass();
+	rn.method1();
+}
